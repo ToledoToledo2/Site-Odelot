@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<title> ODELOT PORTFÓLIO</title>
+<link rel="icon" type="image/x-icon" href="imagens/TAB.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6{
+  font-family: "Raleway", sans-serif;
+}
+
+#portfolio{
+  position: fixed;
+  top: 0;
+  width: 1300px;
+  background-image: no-repeat;
+}
+
+#fundo{
+  background-image: url("imagens/BACKG.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#teste{
+  background-color: black;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+    
+    #portfolio{
+      background-image: linear-gradient(90deg,white,lightgrey) !important;
+      position: static;
+    }
+
+    #tchau{
+      display: none !important;
+    }
+
+    #imgs{
+      margin-left: 9px;
+      width: 147% ;
+    }
+ }
+
+ @media screen and (max-width: 600px){
+
+    #imgs{
+      margin-left: 10px;
+      width: 95% !important;
+    }
+ } 
+
+
+</style>
+
+<body class="w3-light-grey w3-content" id="fundo" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+      <img src="imagens/icon.png" style="width:75%; border-radius:20px;" class="w3-round"><br><br>
+      <h4><img src="imagens/odelot.png" alt="odelot"style="width: 250px;"></h4>
+    <hr>
+  </div>
+
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black" style="font-size:30px;">
+      <img src=imagens/SET.PNG style="width:30px; padding-right: 5px;margin-bottom: 7px;" alt="icon">PORTFÓLIO
+    </a> 
+   
+    <a href="blog.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding" style="font-size:30px;">
+      <img src=imagens/SET.PNG style="width:30px; padding-right: 5px;margin-bottom: 7px;" alt="icon">BLOG
+    </a>   
+  </div>  
+
+  <!--redes-->
+  <div class="w3-panel w3-large">  
+    <a href="https://www.youtube.com/@Odelottt"><img src=imagens/YTB.png style="width:60px" alt="youtube"></a>
+    <a href="https://br.pinterest.com/tnodelot/"><img src=imagens/PIN.png style="width:60px" alt="pinterest"></a>
+    <a href="index.html"><img src=imagens/BSK.png style="width:60px" alt="bluesky"></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div id="teste" class="w3-main w3-animate-top" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio" style="background-image: url(imagens/header.png); border-bottom: 6px solid black;">  
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1 style="color:white;margin-top: 30px;padding-left: -30px;font-size:50px;"><b style="background-color: black; border-radius: 20px;padding: 10px;">Meu Portfólio.</b></h1>
+          <div class="w3-section w3-bottombar w3-padding-16">
+            <a href="#teste">
+              <button id="tchau" class="w3-button w3-light-grey"><img src=imagens/DES.png style="width: 30px; margin: 1px 10px 0px 0px;">DESIGN</button>
+            </a>
+            <a href="#sobre">
+              <button id="tchau" class="w3-button w3-light-grey w3-hide-small"><img src=imagens/SOB.png style="width: 30px; margin: 1px 10px 0px 0px;">SOBRE MIM</button></a>
+          </div>
+      </div>
+  </header>
+
+  <br>
+  
+  <p id="teste"></p>
+
+  <!-- class="w3-hover-opacity" -->
+  <!--First Photo Grid-->
+  <div id="imgs" class="w3-row-padding"  style="width:149%; margin-top: 210px;">
+   
+    <div class="w3-third w3-container w3-margin-bottom">
+     <a href="imagens/logo.png"><img  src="imagens/logo.png" alt="Odelot Logo" style="width:100%"></a>
+      <div class="w3-container w3-white" >
+        <p><b>Logo Odelot</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    
+    <div  class="w3-third w3-container w3-margin-bottom">
+      <a href="imagens/personas.png"><img src="imagens/personas.png" alt="Personagens" style="width:100%"></a>
+      <div class="w3-container w3-white">
+        <p><b>Ideias para personagens</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div> 
+  
+  </div>
+  
+  <!-- Second Photo Grid-->
+ <div id="imgs" class="w3-row-padding" style="width:149%">
+   
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="imagens/coelho.png"><img src="imagens/coelho.png" alt="Coelho Feio" style="width:100%"></a>
+        <div class="w3-container w3-white">
+          <p><b>Um coelho feio...</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="imagens/ilhas.png"><img src="imagens/ilhas.png" alt="Ilhas" style="width:100%"></a>
+        <div class="w3-container w3-white">
+          <p><b>Ilhas</b></p>
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+    </div>  
+  
+  </div>
+
+
+  <br id="sobre">
+
+  <!--About me-->
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px; color: white;">   
+
+    <img src="imagens/EU.png" style="width:32%;border-radius: 20px;">
+ 
+     <h4 style="padding-top: 12px;"><b>Sobre mim.</b></h4>
+       <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <hr>
+  </div> 
+
+    <br>
+        
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h3>Email para contato</h3>
+          <hr>
+          <a href="tn.odelot@gmail.com" style="text-decoration: underline;"><p><b>tn.odelot@gmail.com</b></p></a>
+        </div>
+    
+      <div class="w3-third" style="float: right;">
+        <h3>Ultimos Blogs</h3>
+          <ul class="w3-ul w3-hoverable">   
+        
+           <a href="blog.html #2">  
+            <li class="w3-padding-16">
+              <img src="imagens/logo.png" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Boas vindas!</span><br>
+              <span>O primeiro blog do site!</span>
+            </li>
+          </a>  
+        </ul>
+        
+      </div>
+    </div>
+  </footer>
+  
+  <div style="background-color:black;padding: 25px;"><p style="color: white;text-align: center;">voltar para o <a href="#teste" style="text-decoration: underline;"><b>topo</b>.</a></p></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
